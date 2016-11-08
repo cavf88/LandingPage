@@ -1,2 +1,6 @@
 # LandingPage
-Website
+
+To get started run
+```
+npm install
+```
