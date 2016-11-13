@@ -1,0 +1,44 @@
+#nav{
+  padding-top: 25px;
+  padding-left: 25px;
+  color: #ffffff;
+
+  #top-left{
+    display: inline-block;
+    width: 60%;
+    font-size: 85px;
+
+    #home{
+      color: #e4ae25;
+    }
+
+    #about{
+      color:#067898;
+    }
+
+    #contact{
+      color: #32985b;
+    }
+  }
+
+  #top-right{
+    display: inline-block;
+    font-size: 29px;
+
+    #description{
+
+    }
+
+    #links{
+      text-align: right;
+
+      .menu-item{
+        cursor: pointer;
+      }
+    }
+
+    .selected{
+        color: #4e555c;
+    }
+  }
+}

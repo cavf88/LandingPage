@@ -1,0 +1,22 @@
+<div ng-controller="MenuCtrl" ng-init="setup()" class="{{getNavClasses()}}">
+    <div id="nav">
+        <div id="top-left">
+            HARDCORE <span id="{{selectedState}}">SOFTWARE</span>
+        </div>
+        <div id="top-right">
+            <div id="description">
+                SOFTWARE PLATFORM DEVELOPMENT
+            </div>
+            <div id="links">
+                <span ng-repeat="item in menuItems" ui-sref="{{item.state}}" class="menu-item" ng-class="{selected: item.selected}">
+                    {{item.title}}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div ui-view></div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="menu/menu.css">
